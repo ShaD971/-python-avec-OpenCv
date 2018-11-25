@@ -1,4 +1,12 @@
+denominateur=0
+numerateur=89
 try:
-    # Bloc de test
-except type_de_l_exception as exception_retournee:
-    print("Voici l'erreur :", exception_retournee)
+    resultat = numerateur / denominateur
+except NameError:
+    print("La variable numerateur ou denominateur n'a pas été définie.")
+except TypeError:
+    print("La variable numerateur ou denominateur possède un type incompatible avec la division.")
+except ZeroDivisionError:
+    print("La variable denominateur est égale à 0.")
+else:
+    print("Le résultat obtenu est", resultat)
