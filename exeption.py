@@ -1,12 +1,8 @@
-denominateur=0
-numerateur=89
+annee = input("Saisissez une année supérieure à 0 :")
 try:
-    resultat = numerateur / denominateur
-except NameError:
-    print("La variable numerateur ou denominateur n'a pas été définie.")
-except TypeError:
-    print("La variable numerateur ou denominateur possède un type incompatible avec la division.")
-except ZeroDivisionError:
-    print("La variable denominateur est égale à 0.")
-else:
-    print("Le résultat obtenu est", resultat)
+    annee = int(annee) # Conversion de l'année
+    assert annee > 0
+except ValueError:
+    print("Vous n'avez pas saisi un nombre.")
+except AssertionError:
+    print("L'année saisie est inférieure ou égale à 0.")
