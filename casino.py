@@ -1,4 +1,4 @@
-# Ce fichier abrite le code du ZCasino, un jeu de roulette adapté //teste
+# Ce fichier abrite le code du ZCasino, un jeu de roulette adapté 
 
 import os
 from random import randrange

@@ -1,1 +1,0 @@
-# Multiple-Color-Tracking-using-opencv-and-python-in-Real-Time
